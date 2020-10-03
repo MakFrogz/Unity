@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1655274464770998296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655274464770998298}
+  - component: {fileID: 1655274464770998299}
+  m_Layer: 0
+  m_Name: Level Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655274464770998298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655274464770998296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1655274465719925455}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655274464770998299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655274464770998296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bb023860ae89449a448258d1dbe3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _roomPrefab: {fileID: 6687169579708831965, guid: e4bf7141cc0f022419b9ff6f789b5e01, type: 3}
+  _roomAmount: 10
+  _startRoomColor: {r: 0.13492705, g: 0.9056604, b: 0.123033054, a: 1}
+  _endRoomColor: {r: 0.9433962, g: 0.0658597, b: 0.0658597, a: 1}
+  _generatorPoint: {fileID: 1655274465719925455}
+  _roomLayerMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  _rooms:
+    _roomU: {fileID: 1601010492031692465, guid: b0c89b07d578b01489aaf83272a9f295, type: 3}
+    _roomD: {fileID: 62278914714942058, guid: 46aa0a5e9752d134bbdb0da532b11f8d, type: 3}
+    _roomL: {fileID: 5060894975217495994, guid: ac44a4f108c13384fbc8a0ec3d3b19c0, type: 3}
+    _roomR: {fileID: 5588692643213402768, guid: 98f22d4d546d4d3459286fc56086d129, type: 3}
+    _roomUD: {fileID: 1946912267520634235, guid: f56a536948f7ffc4d92e49cb25975348, type: 3}
+    _roomLR: {fileID: 204206424394501827, guid: 02fd76ef62b8f784dbcf00d8c64de9e5, type: 3}
+    _roomUR: {fileID: 2052911046192044954, guid: 34bcdbe0bf51d434cab098180c5bd6b2, type: 3}
+    _roomUL: {fileID: 139871407698974682, guid: f12cb8277bc0b4b41be61a0e17b069ee, type: 3}
+    _roomDR: {fileID: 4213624289545593089, guid: 70e19547e4f15644e8481977bcc11c26, type: 3}
+    _roomDL: {fileID: 370378173599340307, guid: 2044edcff61f55640a6bda8ca2c3fb8b, type: 3}
+    _roomUDR: {fileID: 1943683761720972578, guid: 30e0245b284bd7d4490fc7d71498d587, type: 3}
+    _roomUDL: {fileID: 4021016627416442099, guid: 8ded48b87b64a4b4d9ab0ab0558e7eda, type: 3}
+    _roomULR: {fileID: 7112744823137905546, guid: 778e5c71728dcb14888ae20ef1ecdb91, type: 3}
+    _roomDLR: {fileID: 7521521707607676431, guid: 197c1d8d9494c7642910792309bf91e7, type: 3}
+    _roomUDLR: {fileID: 7422658640965528065, guid: 9ecd92682cd5596429d8176390243132, type: 3}
+  _startCenter: {fileID: 1210351398723603086, guid: 853f39aeac4195f49b8c078f90fc3b93, type: 3}
+  _endCenter: {fileID: 6726316362656172722, guid: 42dc5b26da345ae488a6600dff25d586, type: 3}
+  _roomCenters:
+  - {fileID: 5956070545193352077, guid: 209c7770e01e28a43986ac603bc2135b, type: 3}
+--- !u!1 &1655274465719925452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655274465719925455}
+  m_Layer: 0
+  m_Name: Generator Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655274465719925455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655274465719925452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1655274464770998298}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
